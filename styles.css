@@ -1,35 +1,82 @@
+:root {
+    --color1-one: #8b0500;
+    --color1-two: #3FEEE6;
+    --color1-three: #55BCC9;
+    --color1-four: #97CAEF;
+    --color1-five: #CAFAFE; 
+    --color2-one: #8EE4AF;
+    --color2-two: #EDF5E1;
+
+    --Ice-Cold: #a0d2eb;
+    --Freeze-Purple: #e5eaf5;
+    --Medium-Purple: #d0bdf4;
+    --Purple-Pain: #8458B3;
+    --Heavy-Purple: #a28089;
+    --shady-grey: #494d5f;
+
+
+  }
+
 .main-content {
-    background-image: url("main.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    width: 100%;
-    height: 100%;
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    height: 100%;   
+    position: relative;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.container {
-    display: flex;
-    padding-top: 30%;
-}
 .typewrite {
-    border: 1 solid brown;
+    border: 1 solid darkgray;
     overflow: hidden;
     white-space: nowrap;
-    border-right: .15em solid orange;
-    font-size: 300px;
-    color: cyan;
+    border-right: .15em solid darkgray;
+    font: 400 150px/1.8 "Lato", sans-serif;
+    color: var(--color-one);
     margin: 0 auto; 
     letter-spacing: .15em;
-    animation: blink 3.5s steps(40, end),
+    animation: blink 3.5s steps(20, end),
     blink-caret .75s step-end infinite;
 }
 
 @keyframes blink {
     from {width:0}
-    to {width:100%}
+    to {width:40%}
 }
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: darkgray; }
 }
+
+.icons {
+    display: flex;
+    padding-top: 4%;
+    font-size: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-left: -5%;
+    animation: fade 7s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    50% {opacity: 50%;}
+    50% {opacity: 100%;}
+}
+
+.resume {
+    height: 100%;
+    place-content: center;
+    font: 400 150px/1.8 "Lato", sans-serif;
+    background-image: linear-gradient(219deg, #2cb5e8 0%, #494d5f 100%); 
+}
+
+a {
+    color: var(--shady-grey);
+}  
