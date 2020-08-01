@@ -1,21 +1,7 @@
-:root {
-    --color1-one: #8b0500;
-    --color1-two: #3FEEE6;
-    --color1-three: #55BCC9;
-    --color1-four: #97CAEF;
-    --color1-five: #CAFAFE; 
-    --color2-one: #8EE4AF;
-    --color2-two: #EDF5E1;
 
-    --Ice-Cold: #a0d2eb;
-    --Freeze-Purple: #e5eaf5;
-    --Medium-Purple: #d0bdf4;
-    --Purple-Pain: #8458B3;
-    --Heavy-Purple: #a28089;
-    --shady-grey: #494d5f;
-
-
-  }
+body {
+    margin: 0 auto;
+}
 
 .main-content {
     background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
@@ -35,8 +21,8 @@
     overflow: hidden;
     white-space: nowrap;
     border-right: .15em solid darkgray;
-    font: 400 150px/1.8 "Lato", sans-serif;
-    color: var(--color-one);
+    font: 400 50px/1.8 "Lato", sans-serif;
+    color: white;
     margin: 0 auto; 
     letter-spacing: .15em;
     animation: blink 3.5s steps(20, end),
@@ -45,7 +31,7 @@
 
 @keyframes blink {
     from {width:0}
-    to {width:40%}
+    to {width:52%}
 }
 
 @keyframes blink-caret {
@@ -56,12 +42,12 @@
 .icons {
     display: flex;
     padding-top: 4%;
-    font-size: 200px;
+    font-size: 50px;
     align-items: center;
     justify-content: center;
     width: 40%;
     margin-left: -5%;
-    animation: fade 7s;
+    animation: fade 10s;
 }
 
 @keyframes fade {
@@ -73,10 +59,10 @@
 .resume {
     height: 100%;
     place-content: center;
-    font: 400 150px/1.8 "Lato", sans-serif;
+    font: 400 75px/1.8 "Lato", sans-serif;
     background-image: linear-gradient(219deg, #2cb5e8 0%, #494d5f 100%); 
 }
 
 a {
-    color: var(--shady-grey);
+    color: black;
 }  
