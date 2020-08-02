@@ -59,6 +59,9 @@ body {
 .resume {
     height: 100%;
     place-content: center;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
     font: 400 75px/1.8 "Lato", sans-serif;
     background-image: linear-gradient(219deg, #2cb5e8 0%, #494d5f 100%); 
 }
@@ -66,3 +69,53 @@ body {
 a {
     color: black;
 }  
+
+.timeline {
+    height: 100%;
+    width: 0.5%;
+    background-color: white;
+    /* margin:20%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.bulge {
+    border-radius: 50%;
+    width: 600%;
+    height: 4%;
+    background-color: yellow;
+    margin-left: -250%;
+    font-size: 20px; 
+}
+
+.activity {
+    font-size: 30%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    flex-wrap: nowrap;
+    margin: auto;
+    margin-left:500%;
+    /* margin-right: -100%; */
+    padding: 20%;
+    /* border: 1% solid black; */
+    color: white;
+}
+
+.year {
+    position: absolute;
+    /* top: -80px; 
+    right: 0px; */
+    color: black; 
+    margin-right: 1000%;
+}
+
+.tl-border {
+    /* outline: 1px solid black; */
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 75%;
+    width: 70%;
+    padding: 10%;
+}
