@@ -5,6 +5,7 @@ body {
 
 .main-content {
     background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    /* background-image: linear-gradient(219deg, #2cb5e8 0%, #494d5f 100%);  */
     height: 100%;   
     position: relative;
     background-size: cover;
@@ -63,7 +64,8 @@ body {
     align-items: center;
     /* display: flex; */
     font: 400 75px/1.8 "Lato", sans-serif;
-    background-image: linear-gradient(219deg, #2cb5e8 0%, #494d5f 100%); 
+    /* background-image: linear-gradient(219deg, #2cb5e8 0%, #494d5f 100%);  */
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
 
 a {
@@ -72,8 +74,8 @@ a {
 
 .timeline {
     height: 100%;
-    width: 0.5%;
-    background-color: white;
+    width: 0.25%;
+    background-color: black;
     /* margin:20%; */
     display: flex;
     flex-direction: column;
@@ -81,11 +83,11 @@ a {
 
 .bulge {
     border-radius: 50%;
-    width: 600%;
-    height: 4%;
-    background-color: yellow;
-    margin-left: -250%;
-    font-size: 20px; 
+    width: 500%;
+    height: auto;
+    background-color: rgb(14, 88, 88);
+    /* margin-left: -150%; */
+    font-size: 15px; 
 }
 
 .activity {
@@ -102,11 +104,8 @@ a {
 }
 
 .year {
-    position: absolute;
-    /* top: -80px; 
-    right: 0px; */
     color: black; 
-    margin-right: 1000%;
+    margin-left: 130%;
 }
 
 .tl-border {
