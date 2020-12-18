@@ -4,8 +4,9 @@ body {
 }
 
 .main-content {
-    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    /* background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
     /* background-image: linear-gradient(219deg, #2cb5e8 0%, #494d5f 100%);  */
+    background-image: linear-gradient(141deg, #9fb8ad 0%,grey 15%, black 75%); 
     height: 100%;   
     position: relative;
     background-size: cover;
@@ -22,8 +23,10 @@ body {
     overflow: hidden;
     white-space: nowrap;
     border-right: .15em solid darkgray;
-    font: 400 50px/1.8 "Lato", sans-serif;
-    color: white;
+    /* font: 400 50px/1.8 "Lato", sans-serif; */
+    font:400 50px/1.8 "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    /* color: white; */
+    color: rgb(142, 142, 147);
     margin: 0 auto; 
     letter-spacing: .15em;
     animation: blink 3.5s steps(20, end),
@@ -49,6 +52,7 @@ body {
     width: 40%;
     margin-left: -5%;
     animation: fade 10s;
+    
 }
 
 @keyframes fade {
@@ -69,7 +73,8 @@ body {
 }
 
 a {
-    color: black;
+    /* color: black; */
+    color: #07c;
 }  
 
 .timeline {
@@ -118,3 +123,4 @@ a {
     width: 70%;
     padding: 10%;
 }
+
