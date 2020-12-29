@@ -10,9 +10,9 @@ body {
 }
 
 .main-content {
-    z-index: -1;
+    /* z-index: ; */
     background-image: linear-gradient(141deg, #9fb8ad 0%,grey 15%, black 75%);
-    height: 150%;   
+    height: 190%;   
     position: relative;
     background-size: cover;
     background-position: center;
@@ -239,6 +239,7 @@ a {
     }
   }
   .footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    /* bottom: 0; */
+    padding-top: 10%;
   }
