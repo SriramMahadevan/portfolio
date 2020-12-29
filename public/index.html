@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <div class=container>
         <div class="main-content">
             <div class="typewrite">Hi I am Sriram Mahadevan..</div>
@@ -21,7 +22,19 @@
                     style="padding-left: 30%;">
                     <i class="fa fa-linkedin"></i></a>
             </div>
+            <div class="footer" onclick="scrollWin()">
+                <div class="chevron" ></div>
+                <div class="chevron" ></div>
+                <div class="chevron" ></div>
+                <span class="scrolltext" >Scroll down</span>
+            </div>
 
+            <script>
+                function scrollWin() {
+                    console.log("scroll down");
+                  window.scrollBy(100, 0);
+                }
+            </script>
         </div>
     
         <div class="box">
