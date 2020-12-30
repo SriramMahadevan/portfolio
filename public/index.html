@@ -5,13 +5,13 @@
     <link rel = "icon" href ="developer.png">  
     <!-- type = "image/x-icon">  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="dark-theme.css">
 </head>
 
 <body>
 
     <div class=container>
-        <div class="main-content">
+        <div class="main-content" id="main-content">
             <div class="typewrite">Hi I am Sriram Mahadevan..</div>
             <div class="icons">
                 <a href="https://github.com/SriramMahadevan" target="_blank" style="padding-left: 10%;">
@@ -25,22 +25,21 @@
 
             <script>
                 function scrollWin() {
-                    console.log("scroll down");
-                  window.scrollBy(0, document.body.scrollHeight);
+                    // document.body.height;
+                  window.scrollBy(0, document.getElementById("main-content").offsetHeight);
                 }
             </script>
 
-            <div class="footer" onclick="scrollWin();">
+            <div class="footer">
                 <div class="chevron" ></div>
                 <div class="chevron" ></div>
                 <div class="chevron" ></div>
                 <span class="scrolltext" >Scroll down</span>
             </div>
 
-
         </div>
     
-        <div class="box">
+        <div class="box" id="second-page">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -85,13 +84,22 @@
             </div>
         </div>
 
-        <div class="contact">
-            <div style="padding: 1%;"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+        <div   class="contact">
+            <!-- <div style="padding: 1%;"><i class="fa fa-envelope" aria-hidden="true"></i></div>
             <div style="padding: 1%;"><p>srirammahadevan@outlook.com</p></div>
             <div style="padding: 1%;"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
-            <div style="padding: 1%;"><p>+91 9629137500</p></div>
+            <div style="padding: 1%;"><p>+91 9629137500</p></div> -->
+            <h1 style="padding-top: 5%;padding-left: 45%;color: white; font-size: 3vw;">Contact</h1>
+            <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Name" name="name"  class="contact-form-element"/>
+                <input type="text" placeholder="Email" name="mail"  class="contact-form-element"/>
+                <textarea name="message"  class="contact-form-element" placeholder="Your message"></textarea>
+                <input type="submit" class="contact-button"/>
+            </form>
+            </div>
         </div>
-    </div>
+    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 </body>
 
 </html>

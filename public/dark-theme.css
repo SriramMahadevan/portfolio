@@ -1,0 +1,271 @@
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    /* background-image: linear-gradient(141deg, #9fb8ad 0%,grey 15%, black 75%); */
+    /* background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+
+}
+
+.main-content {
+    /* z-index: ; */
+    background-image: linear-gradient(141deg, #9fb8ad 0%,grey 15%, black 75%);
+    /* background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+    height: 190%;   
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.typewrite {
+    border: 1 solid darkgray;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid darkgray;
+    font:400 50px/1.8 "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: blink 6s steps(20, end),
+    blink-caret 0.5s step-end infinite;
+    margin-top: 20%;
+}
+
+@keyframes blink {
+    from {width:0}
+    to {width:45%}
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: darkgray; }
+}
+
+.icons {
+    display: flex;
+    padding-top: 4%;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-left: -5%;
+    animation: fade 10s;
+    
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    50% {opacity: 50%;}
+    50% {opacity: 100%;}
+}
+
+a {
+    color: #07c;
+}  
+
+/* .box {
+    display: flex;
+    /* width: 100%; 
+    /* align-items: center; 
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+} */
+
+.box {
+    /* Add shadows to create the "card" effect */
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+    height: 70%;
+  }
+
+.box > div {
+    background-color: white;
+    width: 30%;
+    height: 30vw;
+    /* text-align: center; */
+    /* line-height: 20vw; */
+    font-size: 30px;
+    /* box-shadow: 5px 10px 8px #888888; */
+    /* padding-top: -20%; */
+    margin-top: -20vw;
+    /* text-align: unset; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* padding: 2px 16px; */
+    
+}
+
+.list-item {
+    line-height: normal;
+}
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    /* background-color: #bbb; */
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  
+
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+  .scrolltext {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+  .footer {
+    position: relative;
+    /* bottom: 0; */
+    padding-top: 10%;
+  }
+
+
+  .contact {
+    background-color: #252934;
+    height: 100%;
+  }
+  
+  .contact-form {
+     margin: 2% 20% 20% 20%;
+  }
+  .contact-form-element {
+    padding:2%;
+    border:5; 
+    background-color: rgba(252, 249, 249, 0.877);
+    box-shadow:0 0 15px 4px rgba(252, 249, 249, 0.541);
+    border-radius:10px;
+    margin: 5%;
+    width: 100%;
+  }
+
+  .contact-button {
+    padding:2%;
+    border:0;
+    background-color: rgb(31, 148, 194);
+    /* box-shadow:0 0 15px 4px rgba(252, 249, 249, 0.541);   */
+    width: 40%;
+    border-radius:10px;
+    margin: 5%;
+    margin-left: 30%;
+  }
